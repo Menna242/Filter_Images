@@ -208,7 +208,7 @@ void Black_white() {
     }
 
 }
-
+//-----------------------------------------------------------------------------------
 void Invert(){
     /* we  choose 255 Because the largest pixel color is 255(white color)
    ,so we donot have (-) number ==>
@@ -225,7 +225,7 @@ void Invert(){
 
 }
 
-
+//-------------------------------------------------------------------------------------------
 void marge_image(){
     load1Image();  // to take from user second image
     for (int i = 0; i < SIZE; i++) {
@@ -239,7 +239,7 @@ void marge_image(){
 
 
 }
-
+//-----------------------------------------------------------------------------------------
 void flip(){
     /*
     choose between mirroring an image vertically or horizontally. If "vertically" is chosen,
@@ -264,7 +264,7 @@ void flip(){
 
 }
 
-
+//--------------------------------------------------------------------------------------
 void Rotate(){
     /*I will start from the last column and every index in the rows from last to first
         will be recorded in the pixel in the new array from the last to the first column
@@ -341,7 +341,7 @@ void Rotate(){
 
 
 
-
+//--------------------------------------------------------------------------------------------
 void Darken_Lighten(){
     for (int i = 0; i < SIZE; i++) {
         for (int j = 0; j < SIZE; j++) {
@@ -362,6 +362,7 @@ void Darken_Lighten(){
 
 
 }
+//---------------------------------------------------------------------------------------------------------
 void edge(){
     /*The first step: Convert the image to black and white by doing this. If the pixel value is greater than 127, it is set to 255 (white)
      and if the pixel value is less than 127, it is set to 0 (black).
@@ -405,7 +406,7 @@ void edge(){
 }
 
 
-
+//--------------------------------------------------------------------------------
 void Enlarge_image(){
 
     /* every index in the image will be representing in 4 index in the new image
@@ -502,7 +503,7 @@ void Enlarge_image(){
 
 
 
-
+//----------------------------------------------------------------------------
 void shrank() {
     /* The user input his image and shrink this image by puting many pixels from his image
      * to one pixel from new image */
@@ -545,6 +546,7 @@ void shrank() {
 
 
 }
+//---------------------------------------------------------------------------------------------------------------
 void Mirror_image(){
     /*The user is asked to enter the direction of the half of the image that he wants to reflect on the mirror
 If it is left, the pixel values from the right part of the image will be copied to. Left part
@@ -576,7 +578,7 @@ If not, the values will be copied from the bottom part to the top part*/
     }
 
 }
-
+//-----------------------------------------------------------------------------------
 void Shuffle_Image(){
 
     // We have 4 probabilities: Every quarter in the new image has 4 probabilities
@@ -812,7 +814,7 @@ void Shuffle_Image(){
     }
 
 }
-
+//----------------------------------------------------------------------------
 void crop() {
     /* In this filter user input image and the index of start in this image,
      * width and hight after that make new image that stat from this point to the widht and height he input
@@ -852,7 +854,7 @@ cin>>w>>m;
 
 
 }
-
+//---------------------------------------------------------------------------------
 void plur(){
     /* In this filter we take the average of each pixel by taking all around pixel
      * and divide it on its number
@@ -917,7 +919,7 @@ void plur(){
 
 
 }
-
+//----------------------------------------------------------------------------------------------------------------
 void skew() {
 
     /* we start to get the angle the user want and get the width of this image
