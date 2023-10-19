@@ -246,7 +246,7 @@ void flip(){
     it swaps corresponding rows of the image array, if any other input is given,
     it swaps corresponding columns to mirror the imagehorizontally.
     */
-    if(s[0]=='V'){
+    if(s[0]=='H'){
         for (int i = 0; i < SIZE/2; i++) {
             for (int j = 0; j< SIZE; j++) {
                 swap(image[i][j],image[SIZE-1-i][j]);
