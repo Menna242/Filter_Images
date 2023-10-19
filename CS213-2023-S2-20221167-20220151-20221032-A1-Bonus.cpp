@@ -950,7 +950,7 @@ void Skew() {
 
     string h;
     cin>>h;
-    if(h[0]=='h'){
+    if(h[0]=='v'){
         cout<<"Enter an angle: ";
         float n; cin>>n;
         n=90-n;
